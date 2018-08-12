@@ -1,0 +1,30 @@
+# Time in seconds
+# Current in amps
+# position, velocity, and acceleration in device units
+operation_mode: 'profile_velocity'
+clear_faults: true
+halt_velocity: true
+torque_constant: 0.0263
+
+motor:
+  type: 10
+  ec_motor:
+    nominal_current: 10.000
+    max_output_current: 25.000
+    thermal_time_constant: 400
+    number_of_pole_pairs: 1
+
+sensor:
+  type: 1
+  incremental_encoder:
+    resolution: 500
+    inverted_polarity: false
+
+safety:
+  max_following_error: 20000
+  max_profile_velocity: 8000
+  max_acceleration: 20000
+
+velocity_profile:
+  acceleration: 16000
+deceleration: 3500 # DO NOT INCREASE THIS VALUE (will result in back emf through EPOS)

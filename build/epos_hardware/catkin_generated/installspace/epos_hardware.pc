@@ -1,0 +1,8 @@
+prefix=/home/user/catkin_ws/install
+
+Name: epos_hardware
+Description: Description of epos_hardware
+Version: 0.0.2
+Cflags: -I/home/user/catkin_ws/install/include
+Libs: -L/home/user/catkin_ws/install/lib -lepos_library_utils -lepos_manager -lepos_hardware
+Requires: epos_library hardware_interface roscpp controller_manager diagnostic_updater

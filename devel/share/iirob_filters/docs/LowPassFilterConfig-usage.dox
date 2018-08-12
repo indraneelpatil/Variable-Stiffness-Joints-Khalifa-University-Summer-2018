@@ -1,0 +1,10 @@
+\subsubsection usage Usage
+\verbatim
+<node name="iirob_filters" pkg="iirob_filters" type="iirob_filters">
+  <param name="SamplingFrequency" type="double" value="0.0" />
+  <param name="DampingFrequency" type="double" value="0.0" />
+  <param name="DampingIntensity" type="double" value="0.0" />
+  <param name="divider" type="int" value="1" />
+</node>
+\endverbatim
+

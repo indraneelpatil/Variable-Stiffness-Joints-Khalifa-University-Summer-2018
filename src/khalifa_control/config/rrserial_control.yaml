@@ -1,0 +1,15 @@
+rrhorizontal:
+  
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 1000  
+  
+  
+  motor_joint1_effort_controller:
+    type: effort_controllers/JointEffortController
+    joint: motor_joint1
+   
+  elastic_joint1_effort_controller:
+    type: effort_controllers/JointEffortController
+    joint: elastic_joint1
+    

@@ -1,0 +1,9 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~SamplingFrequency" : \b [double] sampling frequency min: -std::numeric_limits<double>::infinity(), default: 0.0, max: std::numeric_limits<double>::infinity()
+- \b "~DampingFrequency" : \b [double] sampling frequency min: -std::numeric_limits<double>::infinity(), default: 0.0, max: std::numeric_limits<double>::infinity()
+- \b "~DampingIntensity" : \b [double] sampling frequency min: -std::numeric_limits<double>::infinity(), default: 0.0, max: std::numeric_limits<double>::infinity()
+- \b "~divider" : \b [int] divider min: -2147483648, default: 1, max: 2147483647
+

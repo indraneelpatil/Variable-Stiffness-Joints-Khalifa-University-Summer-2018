@@ -1,0 +1,9 @@
+\subsubsection usage Usage
+\verbatim
+<node name="iirob_filters" pkg="iirob_filters" type="iirob_filters">
+  <param name="linear_threshold" type="double" value="0.0" />
+  <param name="angular_threshold" type="double" value="0.0" />
+  <param name="threshold" type="double" value="0.0" />
+</node>
+\endverbatim
+

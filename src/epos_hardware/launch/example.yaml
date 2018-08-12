@@ -1,0 +1,38 @@
+# Time in seconds
+# Current in amps
+# position, velocity, and acceleration in device units
+my_joint_actuator:
+  actuator_name: 'test_joint_actuator'
+  serial_number: '0x602079025628'
+  operation_mode: 'current'
+  clear_faults: true
+  torque_constant: 0.0000705    #Nm/mA
+ 
+
+  motor:
+    type: 10
+    ec_motor:
+      nominal_current: 5
+      max_output_current: 10
+      thermal_time_constant: 34.1
+      number_of_pole_pairs: 12
+
+  sensor:
+    type: 2
+    incremental_encoder:
+       resolution: 2048
+       inverted_polarity: false
+
+  safety:
+    max_following_error: 2000
+    max_profile_velocity: 2000
+    max_acceleration: 3083
+
+  position_profile:
+    velocity: 1000
+    acceleration: 2000
+    deceleration: 3000
+
+  velocity_profile:
+    acceleration: 2000
+    deceleration: 3000

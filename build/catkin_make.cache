@@ -1,0 +1,2 @@
+epos_hardware:epos_library:iirob_filters:khalifa_control:khalifa_gazebo:khalifa_plugin:netft_rdt_driver:pysdf
+-DCATKIN_DEVEL_PREFIX=/home/user/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/user/catkin_ws/install -G Unix Makefiles

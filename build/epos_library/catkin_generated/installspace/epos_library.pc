@@ -1,0 +1,8 @@
+prefix=/home/user/catkin_ws/install
+
+Name: epos_library
+Description: Description of epos_library
+Version: 0.0.2
+Cflags: -I/home/user/catkin_ws/install/include
+Libs: -L/home/user/catkin_ws/install/lib -lftd2xx -lEposCmd
+Requires: 

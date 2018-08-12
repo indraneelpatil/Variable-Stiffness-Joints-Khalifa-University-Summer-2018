@@ -1,0 +1,12 @@
+\subsubsection usage Usage
+\verbatim
+<node name="iirob_filters" pkg="iirob_filters" type="iirob_filters">
+  <param name="world_frame" type="str" value="" />
+  <param name="sensor_frame" type="str" value="" />
+  <param name="CoG_x" type="double" value="0.0" />
+  <param name="CoG_y" type="double" value="0.0" />
+  <param name="CoG_z" type="double" value="0.0" />
+  <param name="force" type="double" value="0.0" />
+</node>
+\endverbatim
+

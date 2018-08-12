@@ -1,0 +1,9 @@
+\subsubsection usage Usage
+\verbatim
+<node name="iirob_filters_kalman_filter" pkg="iirob_filters" type="iirob_filters_kalman_filter">
+  <param name="dt" type="double" value="0.0" />
+  <param name="n" type="int" value="0" />
+  <param name="m" type="int" value="0" />
+</node>
+\endverbatim
+

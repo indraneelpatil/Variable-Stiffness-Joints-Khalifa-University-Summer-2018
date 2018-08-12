@@ -1,0 +1,8 @@
+prefix=/home/user/catkin_ws/devel
+
+Name: iirob_filters
+Description: Description of iirob_filters
+Version: 0.8.0
+Cflags: -I/home/user/catkin_ws/devel/include -I/home/user/catkin_ws/src/iirob_filters/include -I/usr/include/eigen3
+Libs: -L/home/user/catkin_ws/devel/lib -liirob_filters
+Requires: eigen_conversions filters geometry_msgs roscpp rosparam_handler

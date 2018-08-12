@@ -1,0 +1,11 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~world_frame" : \b [str] refrence coordinate system min: , default: , max: 
+- \b "~sensor_frame" : \b [str] sensor coordinate system min: , default: , max: 
+- \b "~CoG_x" : \b [double] value min: -std::numeric_limits<double>::infinity(), default: 0.0, max: std::numeric_limits<double>::infinity()
+- \b "~CoG_y" : \b [double] value min: -std::numeric_limits<double>::infinity(), default: 0.0, max: std::numeric_limits<double>::infinity()
+- \b "~CoG_z" : \b [double] value min: -std::numeric_limits<double>::infinity(), default: 0.0, max: std::numeric_limits<double>::infinity()
+- \b "~force" : \b [double] value min: -std::numeric_limits<double>::infinity(), default: 0.0, max: std::numeric_limits<double>::infinity()
+

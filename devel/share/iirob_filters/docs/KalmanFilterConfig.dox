@@ -1,0 +1,8 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~dt" : \b [double] time between two updates min: -std::numeric_limits<double>::infinity(), default: 0.0, max: std::numeric_limits<double>::infinity()
+- \b "~n" : \b [int] number of states min: -2147483648, default: 0, max: 2147483647
+- \b "~m" : \b [int] number of measurements min: -2147483648, default: 0, max: 2147483647
+

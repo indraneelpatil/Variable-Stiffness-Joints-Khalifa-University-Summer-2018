@@ -1,0 +1,122 @@
+<?xml version="1.0" ?>
+<robot name="khalifa_manipulator">
+
+	
+	<material name="blue">
+		<color rgba="0 0 0.8 1"/>
+	</material>
+	
+	<material name="white">
+		<color rgba="1 1 1 1"/>
+	</material>
+	
+	<link name="world"/>
+	
+	<joint name="base_link_to_gazebo" type="fixed">
+		<parent link="world"/>
+		<child link="base_link"/>
+	</joint>
+	
+	
+	<link name="base_link">
+		<visual>
+			<origin xyz="0 0 1" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.1 0.1 2"/>
+			</geometry>
+			<material name="blue"/>
+		</visual>
+		
+		<collision>
+			<origin xyz="0 0 1" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.1 0.1 2"/>
+			</geometry>
+		</collision>
+		
+		<inertial>
+			<origin xyz="0 0 1" rpy="0 0 0"/>
+			<mass value="1"/>
+			<inertia 
+				ixx=" {1 / 12.0 * (0.1 *0.1 + 2*2)}" ixy="0.0" ixz="0.0"
+	  			iyy="{1 / 12.0 * (2*2 + 0.1*0.1)}" iyz="0.0"
+				izz="{1 / 12.0 * (0.1*0.1 + 0.1*0.1)}"/>
+		</inertial>
+	</link>
+	
+	<joint name="joint1" type="revolute">
+    	<parent link="base_link"/>
+    	<child link="link1"/>
+    	<origin xyz="0 0.1 1.95" rpy="0 0 0"/>
+    	<axis xyz="0 1 0"/>
+    	<limit effort="1000.0" lower="0.0" upper="0.548" velocity="0.5"/>  <!-- In Radians -->
+	</joint>
+	
+	<link name="link1">
+		<visual>
+			<origin xyz="0 0 0.45" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.1 0.1 1"/>
+			</geometry>
+			<material name="white"/>
+		</visual>
+		
+		<collision>
+			<origin xyz="0 0 0.45" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.1 0.1 1"/>
+			</geometry>
+		</collision>
+		
+		<inertial>
+			<origin xyz="0 0 0.45" rpy="0 0 0"/>
+			<mass value="1"/>
+			<inertia 
+				ixx="{1 / 12.0 * (0.1*0.1 + 1*1)}" ixy="0.0" ixz="0.0"
+	  			iyy="{1 / 12.0 * (1*1 + 0.1*0.1)}" iyz="0.0"
+				izz="{1 / 12.0 * (0.1*0.1 + 0.1*0.1)}"/>
+		</inertial>
+	</link>
+	
+	<joint name="joint2" type="revolute">
+    	<parent link="link1"/>
+    	<child link="link2"/>
+    	<origin xyz="0 0.1 0.90 " rpy="0 0 0"/>
+    	<axis xyz="0 1 0"/>
+    	<limit effort="1000.0" lower="0.0" upper="0.548" velocity="0.5"/>  <!-- In Radians -->
+	</joint>
+	
+	<link name="link2">
+		<visual>
+			<origin xyz="0 0 0.45" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.1 0.1 1"/>
+			</geometry>
+			<material name="blue"/>
+		</visual>
+		
+		<collision>
+			<origin xyz="0 0 0.45" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.1 0.1 1"/>
+			</geometry>
+		</collision>
+		
+		<inertial>
+			<origin xyz="0 0 0.45" rpy="0 0 0"/>
+			<mass value="1"/>
+			<inertia 
+				ixx="{1 / 12.0 * (0.1*0.1 + 1*1)}" ixy="0.0" ixz="0.0"
+	  			iyy="{1 / 12.0 * (1*1 + 0.1*0.1)}" iyz="0.0"
+				izz="{1 / 12.0 * (0.1*0.1 + 0.1*0.1)}"/>
+		</inertial>
+	</link>
+	
+</robot>
+	
+	
+	
+	
+	
+	
+				

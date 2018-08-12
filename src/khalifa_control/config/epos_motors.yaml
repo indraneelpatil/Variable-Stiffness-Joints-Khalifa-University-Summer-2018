@@ -1,0 +1,10 @@
+# Time in seconds
+# Current in amps
+# position, velocity, and acceleration in device units
+
+
+
+
+motor1:
+  actuator_name: motor1
+  serial_number: '0x602079025628'

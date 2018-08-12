@@ -1,0 +1,17 @@
+<launch>
+	<rosparam file="$(find khalifa_control)/config/rrserial_control.yaml" command="load"/>
+	
+	
+ 	<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+		output="screen" ns="/rrhorizontal" args="	joint_state_controller
+					  								motor_joint1_effort_controller
+					  								elastic_joint1_effort_controller"/>
+	
+
+  <!-- convert joint states to TF transforms for rviz, etc -->
+  	<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+				respawn="false" output="screen">
+    	<remap from="/joint_states" to="/rrhorizontal/joint_states" />
+  	</node>
+
+</launch>
